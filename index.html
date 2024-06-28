@@ -1,0 +1,133 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <meta name="description" content="my first project in HTML">
+    <meta name="keywords" content="HTML">
+    <meta name="author" content="Mikewatata@gmail.com">
+
+    <title>Expense Tracker Application</title>
+    <link rel="stylesheet" href="styles.css">
+</head>
+
+<body>
+    <header>
+        <h1>Expense Tracker</h1>
+        <nav>
+            <ul>
+                <li><a href="index.html">Home</a></li>
+                <li><a href="expense.html">Expenses</a></li>
+                <li><a href="add_expense.html">Add Expense</a></li>
+                <li><a href="categories.html">Categories</a></li>
+                <li><a href="view_expense.html">View Expenses</a></li>
+                <li><a href="edit_expense.html">Edit Expense</a></li>
+                <li><a href="budget.html">Budget</a></li>
+                <li><a href="reports.html">Reports</a></li>
+                <li><a href="login.html">Login</a></li>
+                <li><a href="registration.html">Register</a></li>
+            </ul>
+        </nav>
+    </header>
+    <main>
+        <section class="hero">
+            <h2>Welcome to Your Expense Tracker</h2>
+            <p>Effortlessly track your expenses with our intuitive and feature-rich application, designed for seamless
+                and efficient financial management</p>
+            <a href="registration.html" class="btn-primary">Get Started</a>
+        </section>
+    </main>
+    
+  
+    <main 
+    style="display: flex; 
+    justify-content: center; 
+    align-items: flex-start;">
+        <section style="text-align: center; flex: 1; margin-right: 20px;">
+            <h3>Registration Form</h3>
+            <form style="padding: 20px; background-color: #f0f0f0; border-radius: 8px; text-align: left;">
+                <label for="name">Name:</label>
+                <input type="text" id="name" name="name" style="width: 100%; padding: 10px; margin-bottom: 10px; box-sizing: border-box;"><br><br>
+    
+                <label for="email">Email:</label>
+                <input type="email" id="email" name="email" style="width: 100%; padding: 10px; margin-bottom: 10px; box-sizing: border-box;"><br><br>
+    
+                <label for="phone">Phone Number:</label>
+                <input type="tel" id="phone" name="phone" style="width: 100%; padding: 10px; margin-bottom: 10px; box-sizing: border-box;"><br><br>
+    
+                <button type="submit" style="background-color: gray; color: blue; padding: 10px 20px; border: none; border-radius: 5px; cursor: pointer;">Register</button>
+            </form>
+        </section>
+    
+        <section style="text-align: center; flex: 1; margin-left: 20px;">
+            <h2>Expense Entry</h2>
+            <form style="padding: 20px; background-color: #f0f0f0; border-radius: 8px; text-align: left;">
+                <label for="amount">Amount:</label>
+                <input type="number" id="amount" name="amount" required style="width: 100%; padding: 10px; margin-bottom: 10px; box-sizing: border-box;"><br><br>
+    
+                <label for="category">Category:</label>
+                <select id="category" name="category" required style="width: 100%; padding: 10px; margin-bottom: 10px; box-sizing: border-box;">
+                    <option value="">Select category...</option>
+                    <option value="food">Food</option>
+                    <option value="transport">Transport</option>
+                    <option value="housing">Housing</option>
+                    <option value="entertainment">Entertainment</option>
+                    <option value="others">Others</option>
+                </select><br><br>
+    
+                <label for="date">Date:</label>
+                <input type="date" id="date" name="date" required style="width: 100%; padding: 10px; margin-bottom: 10px; box-sizing: border-box;"><br><br>
+    
+                <button type="submit" style="background-color: gray; color: blue; padding: 10px 20px; border: none; border-radius: 5px; cursor: pointer;">Add Expense</button>
+            </form>
+        </section>
+    </main>
+    
+    <section style="margin-top: 20px; margin-bottom: 20px;">
+        <h3>User Information</h3>
+        <table border="1" cellpadding="10" cellspacing="0" width="100%" style="border-collapse: collapse;">
+            <tr>
+                <th>Image</th>
+                <th>Name</th>
+                <th>Email</th>
+                <th>Phone Number</th>
+            </tr>
+            <tr>
+                <td><img src="image/m3.jpg" alt="wuod rose" width="50" height="50"></td>
+                <td>Wuod Rose</td>
+                <td>wuodrose@gmail.com</td>
+                <td>0701020304</td>
+            </tr>
+            <tr>
+                <td><img src="image/m2.jpg" alt="Mike Odhiambo" width="50" height="50"></td>
+                <td>Mike Odhiambo</td>
+                <td>mikeOdhiambo@gmail.com</td>
+                <td>0701020304</td>
+            </tr>
+        </table>
+    </section>
+    
+
+        <section>
+            <h3>Site Operator</h3>
+            <div style="text-align: center;">
+                <img src="image/m1.jpg" alt="image" width="75">
+            </div>
+
+        </section>
+
+        <section style="margin-top: 20px; margin-bottom: 20px; text-align: center;">
+            <h3>External Link</h3>
+            <p style="margin-top: 10px; margin-bottom: 10px;">
+                For more information, visit <a href="https://google.com" target="_blank">Google</a>.
+            </p>
+        </section>
+        
+    </main>
+    <footer>
+        <p align="center">&copy; 2024 Expense Tracker App. All rights reserved by {Michael Watata}</p>
+    </footer>
+</body>
+
+</html>
